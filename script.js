@@ -3,12 +3,12 @@ function makeid(l) {
 	const chars = "ABCDEFGHIJKLMNPOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	let result="";
 	for(let  i=0;i<l;i++){
-		char rIdx = Math.floor(Math.random() * chars.length);
+		let rIdx = Math.floor(Math.random() * chars.length);
 		result+=chars[rIdx];
 	}
 	return result;
 }
-
+ 
 // Do not change the code below.
 const l = prompt("Enter a number.");
 alert(makeid(l));
